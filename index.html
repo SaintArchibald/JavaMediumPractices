@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.G JavaScript Practice</title>
+    <script src="styles.css"></script>
+    <script src="java.js" defer></script>
+</head>
+
+<body>
+    
+    <h1> Archibald Gauthier</h1>
+    <p> JavaScript 12 question Medium practice</p>
+    
+    <section id="Container">
+        <div class="row">
+
+            <div class="border-main">
+                <h1 class="q-header">Q1. Falsy or Truthy</h1>
+                <h3 class="q-question">Give two value, return the first one if it is falsy, otherwise return second one.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">filterOuutFalsy(0, 500) -> 0</li>
+                    <li class="q-li">filterOuutFalsy(false, 100) -> false</li>
+                    <li class="q-li">filterOuutFalsy([true, `Dog`]) -> 'Dog' </li>
+                </ul>
+            </div>
+            
+            <div class="border-main">
+                <h1 class="q-header">Q2. Return the length of any given array</h1>
+                <h3 class="q-question">Given an array, return its length.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">arrLength([1, 2, 3]) -> 3</li>
+                    <li class="q-li">arrLength([5, 0, -4, 1]) -> 4</li>
+                    <li class="q-li">arrLength([]) -> 0</li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q3. Get the last element in an array</h1>
+                <h3 class="q-question">Given an array, return the first element.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">lastElem([3, 2, 0, 6, 2]) -> 2</li>
+                    <li class="q-li">lastElem([`dog`, 'cat', `ball` ]) -> `ball`</li>
+                    <li class="q-li">lastElem([nll, 5, false]) -> false </li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q4. Find the sum of an array</h1>
+                <h3 class="q-question">Given an array, return the sum of every element.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">arrSum([2, 2, 2]) -> 6</li>
+                    <li class="q-li">arrSum([100, 200, 500]) -> 800</li>
+                    <li class="q-li">arrSum([0, -5, -10]) -> -15</li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q5. Add up the numbers from a single number</h1>
+                <h3 class="q-question">Given a nmber, add up all the nmbers from one to the number that is given.E.g. An input of 4 will give you 1 + 2 + 3 + 4, which eqals 10.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">progressiveSum(3) -> 6</li>
+                    <li class="q-li">progressiveSum(4) -> 10</li>
+                    <li class="q-li">progressiveSum(600) -> 180300</li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q6. Calclate the time</h1>
+                <h3 class="q-question">Given a number in seconds, return this number in mm:ss format.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">calcTime(66) -> `01:06`</li>
+                    <li class="q-li">calcTime(50) -> `00:50`</li>
+                    <li class="q-li">calcTime(300) -> `05:00`</li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q7. Find the largest number</h1>
+                <h3 class="q-question">Given an array of numbers, return the largest number of that array.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">getMax([5, 100, 0]) -> 100</li>
+                    <li class="q-li">getMax([12, 10, -20]) -> 12</li>
+                    <li class="q-li">getMax([-300, -100, -200]) -> -100</li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q8. Reverse a string</h1>
+                <h3 class="q-question">Given a string, return the reversed string.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">reverseString(`abc`) -> `cba` </li>
+                    <li class="q-li">reverseString(`David`) -> `divaD`</li>
+                    <li class="q-li">reverseString(`David`) -> `looc si sihT`</li>
+                </ul>
+                <p>Use a incrementing for loop</p>
+                <p>Use a decrementing for loop</p>
+                <p>Use the array reverse property</p>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q9. Turn every element in an array into 0</h1>
+                <h3 class="q-question">Given an array of elements, return the same length array filled with 0's.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">convertToZeros([5, 100, 0]) -> [0, 0, 0]</li>
+                    <li class="q-li">convertToZeros([12]) -> [0]</li>
+                    <li class="q-li">convertToZeros([1, 2, 3, 4, 5]) -> [0, 0, 0, 0, 0]</li>
+                </ul>
+                <p>Solution 1: For loop</p>
+                <p>Solution 2: Array `fill`</p>
+                <p>Solution 3: Array `map`</p>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q10. Filter ot all the apples</h1>
+                <h3 class="q-question">Given an array of frits, if it is an apple remove it from the array.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">removeApples([`Banana`,`Apple`,`Orange`,`Apple`]) -> [`Banana`,`Orange`]</li>
+                    <li class="q-li">removeApples([`Tomato`,`Orange`,`Banana`]) -> [`Tomato`,`Orange`,`Banana`]</li>
+                    <li class="q-li">removeApples([`Banana`,`Orange`,`Apple`]) -> [`Banana`,`Orange`]</li>
+                </ul>
+                    <p>Solution 1: For loop</p>
+                    <p>Solution 2: Array `filter`</p>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q11. Filter out all the falsy values</h1>
+                <h3 class="q-question">Given an array of vales, filter ot all the falsy values and only return the truthy values.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">filterOutFalsy(["",[], 0, null, undefined, "0"]) ->[[], "0"] </li>
+                    <li class="q-li">filterOutFalsy(['Tomato',`Orange`,`Banana`,false]) -> [`Tomato`,`Orange`,`Banana`]</li>
+                    <li class="q-li">filterOutFalsy([`Banana`,`Orange`,`Apple`]) -> [`Banana`,`Orange`,`Apple`]</li>
+                </ul>
+            </div>
+
+            <div class="border-main">
+                <h1 class="q-header">Q12. Truthy to true, Falsy to false</h1>
+                <h3 class="q-question">Given an array of truthy and falsy values, return the same array of elements into its boolean value.</h3>
+                <ul class="q-ul">
+                    <li class="q-li">booleanInteger([500, 0, "David","",[]]) -> [true, false, true, false, true]</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
